@@ -1,0 +1,139 @@
+# Track metadata. The site builder and tools/check_track.py read this file.
+track = "cp"
+language = "go"
+name = "Competitive programming in Go"
+sources = "ch*/*.go"
+test = "go vet ./... && go test ./..."
+exercises = 134
+
+[[parts]]
+n = 1
+name = "Language basics"
+chapters = [1, 2, 3, 4]
+
+[[parts]]
+n = 2
+name = "Slices, maps and sorting"
+chapters = [5, 6, 7]
+
+[[parts]]
+n = 3
+name = "Types and functions"
+chapters = [8, 9, 10, 11]
+
+[[parts]]
+n = 4
+name = "Contest essentials"
+chapters = [12, 13, 14, 15, 16]
+
+[[chapters]]
+n = 1
+title = "Input and Output"
+short = "Fast I/O"
+focus = "bufio.Scanner, a byte-level reader and one flushed bufio.Writer: read the judge's input fast and print it exactly."
+file = "ch01/fastio.go"
+
+[[chapters]]
+n = 2
+title = "Numbers and Overflow"
+short = "Numbers"
+focus = "Sized integers wrap silently. Learn when int is 64 bits, how Go divides negatives, and exact 128-bit arithmetic."
+file = "ch02/numbers.go"
+
+[[chapters]]
+n = 3
+title = "Strings, Bytes and Runes"
+short = "Strings"
+focus = "Immutable UTF-8 strings, bytes versus runes, and building output with strings.Builder."
+file = "ch03/strings.go"
+
+[[chapters]]
+n = 4
+title = "Control Flow"
+short = "Control flow"
+focus = "One loop keyword, labeled breaks, switch without fall-through, defer and error results."
+file = "ch04/control.go"
+
+[[chapters]]
+n = 5
+title = "Arrays and Slices"
+short = "Slices"
+focus = "Arrays are values, slices are views: append, aliasing, copying, 2D grids and filtering in place."
+file = "ch05/slices.go"
+
+[[chapters]]
+n = 6
+title = "Maps and Sets"
+short = "Maps"
+focus = "Counting, comma-ok lookups, sets as map[T]struct{}, and why map order is random."
+file = "ch06/maps.go"
+
+[[chapters]]
+n = 7
+title = "Sorting and Searching"
+short = "Sorting"
+focus = "slices.SortFunc with cmp, stable sorts, sort.Search and binary search on the answer."
+file = "ch07/sorting.go"
+
+[[chapters]]
+n = 8
+title = "Structs, Methods and Interfaces"
+short = "Types"
+focus = "Pointer receivers, embedding, implicit interfaces, Stringer, type switches and error types."
+file = "ch08/types.go"
+
+[[chapters]]
+n = 9
+title = "Generics"
+short = "Generics"
+focus = "Type parameters and constraints: generic helpers, stacks, sets and queues."
+file = "ch09/generics.go"
+
+[[chapters]]
+n = 10
+title = "Stacks, Queues and container/heap"
+short = "Heaps"
+focus = "Slices as stacks and queues, heap.Interface, priority queues, monotonic deques and container/list."
+file = "ch10/heaps.go"
+
+[[chapters]]
+n = 11
+title = "Functions and Closures"
+short = "Closures"
+focus = "Functions as values, closures with state, variadic calls, recursive closures and recover."
+file = "ch11/funcs.go"
+
+[[chapters]]
+n = 12
+title = "Recursion and Memoization"
+short = "Recursion"
+focus = "Memo tables, backtracking without the append trap, and Go's growable stacks."
+file = "ch12/recursion.go"
+
+[[chapters]]
+n = 13
+title = "Bit Manipulation"
+short = "Bits"
+focus = "Masks, &^, shifts past the width, math/bits and enumerating subsets."
+file = "ch13/bits.go"
+
+[[chapters]]
+n = 14
+title = "Math and Number Theory"
+short = "Number theory"
+focus = "GCD, sieves, factorization, bits.Mul64 for exact mulmod, nCr mod p and math/big."
+file = "ch14/numtheory.go"
+
+[[chapters]]
+n = 15
+title = "Writing Fast Go"
+short = "Speed"
+focus = "Avoid fmt.Scan, buffer output, preallocate, prefer slices to maps and budget your operations."
+file = "ch15/fastgo.go"
+
+[[chapters]]
+n = 16
+title = "Contest Patterns"
+short = "Patterns"
+focus = "Two pointers, binary search on the answer, difference arrays, DSU, Dijkstra and DP."
+file = "ch16/patterns.go"

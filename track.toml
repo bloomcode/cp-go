@@ -4,7 +4,7 @@ language = "go"
 name = "Competitive programming in Go"
 sources = "ch*/*.go"
 test = "go vet ./... && go test ./..."
-exercises = 134
+exercises = 152
 
 [[parts]]
 n = 1
@@ -25,6 +25,11 @@ chapters = [8, 9, 10, 11]
 n = 4
 name = "Contest essentials"
 chapters = [12, 13, 14, 15, 16]
+
+[[parts]]
+n = 5
+name = "Beyond the contest"
+chapters = [17, 18, 19]
 
 [[chapters]]
 n = 1
@@ -137,3 +142,24 @@ title = "Contest Patterns"
 short = "Patterns"
 focus = "Two pointers, binary search on the answer, difference arrays, DSU, Dijkstra and DP."
 file = "ch16/patterns.go"
+
+[[chapters]]
+n = 17
+title = "Errors"
+short = "Errors"
+focus = "Code outside a contest has to fail well: report bad input clearly, give errors a type callers can check, add context without losing the cause, and clean up whatever happens."
+file = "ch17/errors.go"
+
+[[chapters]]
+n = 18
+title = "Files and Streams"
+short = "Files"
+focus = "Read and write real files: numbers and words line by line, reports and CSV records, and streams that handle a file of any size without loading it whole."
+file = "ch18/files.go"
+
+[[chapters]]
+n = 19
+title = "Concurrency"
+short = "Concurrency"
+focus = "Do several things at once safely: start work and wait for all of it, pass values between workers, cap the number of workers, protect shared state, and stop waiting when a result is late."
+file = "ch19/concurrency.go"

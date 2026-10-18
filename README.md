@@ -2,7 +2,7 @@
 
 <!-- progress:start -->[![progress](https://img.shields.io/badge/progress-0%2F134-lightgrey)](PROGRESS.md)<!-- progress:end -->
 
-134 exercises in 16 chapters, for engineers preparing for coding interviews and contests. Every exercise is a stub that calls `panic("todo")` and has its own test. Write the code, make the test pass, move on.
+152 exercises in 19 chapters, for engineers preparing for coding interviews and contests. Every exercise is a stub that calls `panic("todo")` and has its own test. Write the code, make the test pass, move on.
 
 The workbook explains each exercise and the answer key has a reference solution: [workbook](https://bloomcode.github.io/cp/go/workbook.html) · [answer key](https://bloomcode.github.io/cp/go/answer-key.html).
 
@@ -62,3 +62,4 @@ If a file you have worked on conflicts, keep your version of your code (`git che
 | Slices, maps and sorting | 5 Slices · 6 Maps · 7 Sorting |
 | Types and functions | 8 Types · 9 Generics · 10 Heaps · 11 Closures |
 | Contest essentials | 12 Recursion · 13 Bits · 14 Number theory · 15 Speed · 16 Patterns |
+| Beyond the contest | 17 Errors · 18 Files · 19 Concurrency |
